@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Alura Plus </title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form class="formulario">
+            <div class="titulo">Crie sua conta</div>
+
+            <input type="text" placeholder="Nome completo" required>
+            <input type="email" placeholder="E-mail" required>
+            
+            <label>Senha</label>
+            <input type="password" placeholder="Crie uma senha" required>
+            <p class="senha-info">Use pelo menos 8 caracteres, incluindo letras e números</p>
+            
+            <input type="password" placeholder="Confirme sua senha">
+            
+            <label>Data de Nascimento</label>
+            <input type="date" required>
+            
+            <label>País ou Região</label>
+            <select required>
+                <option value="" disabled selected>Selecione seu país</option>
+                <option value="br">Brasil</option>
+                <option value="us">Estados Unidos</option>
+                <option value="pt">Portugal</option>
+                <option value="es">Espanha</option>
+                <option value="fr">França</option>
+                <option value="de">Alemanha</option>
+            </select>
+            
+            <label>Método de Pagamento</label>
+            <div class="metodo-pagamento">
+                <select required>
+                    <option value="" disabled selected>Selecione o método</option>
+                    <option value="credit">Cartão de Crédito</option>
+                    <option value="debit">Cartão de Débito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="pix">PIX (Brasil)</option>
+                </select>
+            </div>
+
+            <button type="submit">Assinar Agora</button>
+            
+            <p class="termos">
+                Ao assinar, você concorda com os <a href="#">Termos de Uso</a> e 
+                <a href="#">Política de Privacidade</a> da Alura Plus.
+            </p>
+        </form>
+    </div>
+</body>
+</html>

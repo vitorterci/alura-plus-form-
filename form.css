@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f1a25, #1a2a3a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #0d1b2a;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    border: 2px solid #4facfe;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.formulario .titulo {
+    background: linear-gradient(45deg, #4facfe, #00bfff);
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="date"],
+.formulario select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #4facfe;
+    background: transparent;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.formulario input::placeholder {
+    color: #bbbbbb;
+}
+
+.formulario label {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.senha-info {
+    color: #bbbbbb;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.metodo-pagamento {
+    margin-bottom: 15px;
+}
+
+.metodo-pagamento label {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.metodo-pagamento select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1a2a3a;
+    color: white;
+    border: 1px solid #4facfe;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #4facfe, #00bfff);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.termos {
+    color: #bbbbbb;
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.termos a {
+    color: #4facfe;
+    text-decoration: none;
+}
